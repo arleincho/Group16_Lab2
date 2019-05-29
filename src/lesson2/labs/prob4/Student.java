@@ -6,9 +6,11 @@ import java.util.*;
 public class Student {
 	
 	String name;
+	String id;
 	List<TranscriptEntry> grades;
 	
-	public Student(String name) {
+	Student(String id, String name) {
+		this.id = id;
 		this.name = name;
 		this.grades = new ArrayList<TranscriptEntry>();
 	}

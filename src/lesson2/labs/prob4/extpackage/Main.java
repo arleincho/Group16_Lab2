@@ -24,15 +24,13 @@ public class Main {
 	Section math = this.createSection("Science", 3);
 	
 	private Student createStudent(String name) {
-		Student student = new Student(name);
+		Student student = StudentSectionFactory.createStudent(new Random().toString(), name);
 		students.add(student);
 		return student;
 	}
 	
 	private Section createSection(String courseName, int sectionNumber) {
-		Section section = new Section(courseName, sectionNumber);
-		return section;
-		
+		return StudentSectionFactory.createSection(sectionNumber, courseName);
 	}
 	
 	

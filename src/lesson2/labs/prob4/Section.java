@@ -9,13 +9,12 @@ public class Section {
 	String courseName;
 	int sectionNumber;
 	List<TranscriptEntry> gradeSheet;
-	
-	public Section(String courseName, int sectionNumber) {
+
+	Section(String courseName, int sectionNumber) {
 		this.courseName = courseName;
 		this.sectionNumber = sectionNumber;
 		this.gradeSheet = new ArrayList<TranscriptEntry>();
 	}
-	
 	
 	public List<String> getGrades() {
 		ArrayList<String> grades = new ArrayList<String>(); 
